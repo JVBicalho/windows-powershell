@@ -1,8 +1,14 @@
 <script>
+// Icons
+import IconPowerShell from  './icons/IconPowerShell.vue'
+import IconMaximize from  './icons/IconMaximize.vue'
+import IconClose from  './icons/IconClose.vue'
+
 export default {
-  mounted() {
-    this.$refs.input.focus()
-  }
+    mounted() {
+        this.$refs.input.focus();
+    },
+    components: { IconPowerShell }
 }
 </script>
 
@@ -12,7 +18,7 @@ export default {
     <div class="header">
         <div class="abas">
             <div class="aba">
-                <span>icon</span>Windows PowerShell<span>close</span>
+                <span><IconPowerShell/></span>Windows PowerShell<span>close</span>
             </div>
             <div class="abas-icons">
                 <span>plus</span>
@@ -21,8 +27,12 @@ export default {
         </div>
         <div class="icones">
             <span>-</span>
-            <span>square</span>
-            <span>close</span>   
+            <span>
+                <IconMaximize/>
+            </span>
+            <span>
+                <IconClose/>
+            </span>   
         </div>
     </div>
     <div class="alerta">
@@ -45,7 +55,8 @@ export default {
 .prompt{
     background-color: black;
     color: #fff;
-    
+    border: 0.1vw;
+
 
     
 }
