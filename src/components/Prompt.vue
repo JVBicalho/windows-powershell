@@ -1,8 +1,8 @@
 <script>
 // Icons
-import IconPowerShell from  './icons/IconPowerShell.vue'
-import IconMaximize from  './icons/IconMaximize.vue'
 import IconClose from  './icons/IconClose.vue'
+import IconMaximize from  './icons/IconMaximize.vue'
+import IconPowerShell from  './icons/IconPowerShell.vue'
 
 export default {
     mounted() {
@@ -92,7 +92,9 @@ export default {
 }
 .input-area{
     font-family: "Cascadia Mono";
-    color: #CCCCCC;
+    
+   
+    color: #cCCCCC;
     padding: 1vw ;
 }
 
