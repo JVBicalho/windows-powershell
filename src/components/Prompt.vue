@@ -18,7 +18,7 @@ export default {
     <div class="header">
         <div class="abas">
             <div class="aba">
-                <span><IconPowerShell/></span>Windows PowerShell<span>close</span>
+                <span class="icon"><IconPowerShell/></span>Windows PowerShell<span class="icon"><IconClose /></span>
             </div>
             <div class="abas-icons">
                 <span>plus</span>
@@ -26,19 +26,22 @@ export default {
             </div>
         </div>
         <div class="icones">
-            <span>-</span>
-            <span>
-                <IconMaximize/>
+            <span class="icon">-</span>
+            <span class="icon">
+                <IconMaximize  />
             </span>
-            <span>
-                <IconClose/>
+            <span class="icon">
+                <IconClose />
             </span>   
         </div>
     </div>
     <div class="alerta">
-        <span>!</span>
-        O Terminal do Windows pode ser definido como o aplicativo de terminal padrao em suas configuracoes. <span> Abrir Configuracoes</span>
-        <span>close</span>
+        <span class="icon">!</span>
+        O Terminal do Windows pode ser definido como o aplicativo de terminal padrao em suas configuracoes. 
+        <span class="open-conf"> Abrir Configuracoes</span>
+        <span class="icon">
+            <IconClose />
+        </span>
     </div>
     <div class="input-area">
         O Windows PowerShell <br>
@@ -55,20 +58,37 @@ export default {
 .prompt{
     background-color: black;
     color: #fff;
-    border: 0.1vw;
-
-
+    
+    border-radius: 0.5vw;
+    border: 0.1vw solid #ccc;
+    height: 33.4vw;
+    display: flex;
+    flex-direction: column;
+   
+    width: 59.5vw;
+    
+}
+.icon{
+    
     
 }
 .header{
     background-color: aqua;
     padding: 1vw ;
+    
+    border-radius: 0.1vw 0.1vw 0 0;
+    height: 5vw;
     display: flex;
     flex-direction: row;
 
+    
 }
 .alerta{
     padding: 2vw;
+    background-color: rgb(46, 46, 46);
+}
+.open-conf{
+    color: blue;
 }
 .input-area{
     font-family: "Cascadia Mono";
